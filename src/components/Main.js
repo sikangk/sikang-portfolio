@@ -1,6 +1,17 @@
 import React from "react";
-import styled from "styled-components";
-
+import styled, { keyframes } from "styled-components";
+const reveal = keyframes`
+ 80%{
+      letter-spacing: 3px;
+    }
+    100% {
+      background-size: 300% 300%;
+    }
+  `;
+const glow = keyframes`
+   40% {
+      text-shadow: 0 0 3px #000;
+    }`;
 const MainBlock = styled.div`
   max-width: 1400px;
   height: 800px;
@@ -13,17 +24,24 @@ const MainBlock = styled.div`
   position: relative;
   border-bottom: 1px solid black;
 
-  h1 {
+  .content {
+    background: 50% 100% / 50% 50% no-repeat
+      radial-gradient(ellipse at bottom, #000, transparent, transparent);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 8vw;
     text-align: center;
-    font-size: 80px;
+
+    animation: ${reveal} 3000ms ease-in-out forwards 200ms,
+      ${glow} 2500ms linear infinite 3000ms;
   }
 `;
 
 function Main() {
   return (
     <MainBlock>
-      <h1>KSK PORTFOLIO</h1>
-      <div>곽시강 개인 포트폴리오 사이트 입니다.</div>
+      <div className="content">SIKANG's PORTFOLIO</div>
     </MainBlock>
   );
 }

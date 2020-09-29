@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import styled, { keyframes, css } from "styled-components";
-import { FiMenu, FiXCircle } from "react-icons/fi";
+import styled, { keyframes } from "styled-components";
+import { AiOutlineMenuFold, AiOutlineMenuUnfold } from "react-icons/ai";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 const fadeIn = keyframes`
 from{opacity:0;
@@ -23,7 +23,6 @@ const MenuBarBlock = styled.div`
 
   .MenuUlBlock {
     width: 100%;
-    background: rgba(250, 250, 250, 0.8);
   }
   ul {
     display: none;
@@ -46,12 +45,11 @@ const MenuBarBlock = styled.div`
   }
 
   .MenuUl .link {
-    background: rgba(255, 255, 255, 0.5);
     margin-top: 20px;
     margin-bottom: 20px;
     border-bottom: 1px solid black;
     &:hover {
-      background: black;
+      background: rgb(0, 0, 0, 0.6);
     }
   }
 
@@ -59,12 +57,12 @@ const MenuBarBlock = styled.div`
     text-decoration: none;
     padding: 20px 15px;
     font-weight: bold;
+    color: black;
   }
   .toggleBtn {
     display: flex;
     justify-content: flex-end;
     font-size: 50px;
-    background: rgba(0, 0, 0, 0.1);
     .toggleIcon {
       width: 50px;
       height: 50px;
@@ -73,7 +71,7 @@ const MenuBarBlock = styled.div`
       justify-content: center;
       align-items: center;
       cursor: pointer;
-      transition: 0.125s all ease-in;
+      transform: rotate(-90deg);
     }
   }
 
@@ -93,7 +91,7 @@ function MenuBar() {
       <div className="MenuUlBlock">
         <div className="toggleBtn">
           <div className="toggleIcon" onClick={onToggle}>
-            {toggle ? <FiXCircle /> : <FiMenu className="FiMenu" />}
+            {toggle ? <AiOutlineMenuFold /> : <AiOutlineMenuUnfold />}
           </div>
         </div>
 

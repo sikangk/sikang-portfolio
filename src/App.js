@@ -9,7 +9,7 @@ import Contact from "./components/Contact";
 
 const GlobalStyle = createGlobalStyle`
 body{
-  background:black;
+  background:white;
   box-sizing:border-box;
   
 }

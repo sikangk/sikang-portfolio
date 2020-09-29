@@ -17,16 +17,19 @@ import mysql from "../image/mysql.png";
 import mongodb from "../image/mongodb.png";
 import linux from "../image/linux.png";
 
+import winter from "../image/winter.jpg";
+
 const IntroBlock = styled.div`
   margin-top: 400px;
   max-width: 1400px;
-  background: white;
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
   border-bottom: 1px solid black;
-
+  background: url(${winter});
+  background-size: cover;
+  background-attachment: fixed;
   @media (max-width: 1024px) {
     flex-direction: column;
   }
@@ -44,7 +47,6 @@ const ProfileCircle = styled.div`
   border-radius: 50%;
   background: url(${img});
   background-size: cover;
-  border: 3px solid black;
 `;
 const ProfileContent = styled.div`
   display: flex;
@@ -52,8 +54,8 @@ const ProfileContent = styled.div`
   justify-content: center;
   align-items: center;
   text-align: center;
-  width: 80%;
   margin: 20px auto;
+  background: rgb(255, 255, 255, 0.3);
   h3 {
     font-size: 48px;
     font-weight: bold;
@@ -73,12 +75,15 @@ const SkillBlock = styled.div`
   width: 50%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 20px;
 
   .skill-header {
     width: 100%;
+    height: 50%;
     display: flex;
     justify-content: center;
-    align-items: center;
 
     h3 {
       font-size: 48px;
@@ -91,6 +96,8 @@ const SkillBlock = styled.div`
     justify-content: center;
     align-items: center;
     width: 100%;
+    height: 50%;
+    background: rgb(255, 255, 255, 0.3);
 
     @media (max-width: 1024px) {
       flex-direction: column;

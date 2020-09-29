@@ -1,7 +1,13 @@
-import React, { useState, useRef } from "react";
-import styled from "styled-components";
-import { FiMenu } from "react-icons/fi";
+import React, { useState } from "react";
+import styled, { keyframes, css } from "styled-components";
+import { FiMenu, FiXCircle } from "react-icons/fi";
 import AnchorLink from "react-anchor-link-smooth-scroll";
+const fadeIn = keyframes`
+from{opacity:0;
+}
+to{opacity:1;
+}
+`;
 
 const MenuBarBlock = styled.div`
   max-width: 1400px;
@@ -24,15 +30,19 @@ const MenuBarBlock = styled.div`
   }
 
   .MenuUl {
-    max-width: 1400px;
-    margin: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 0;
     list-style: none;
     background: rgba(250, 250, 250, 0.1);
+    position: absolute;
+    right: 0;
+    margin-right: 20px;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
+    animation-name: ${fadeIn};
+    animation-fill-mode: forwards;
   }
 
   .MenuUl .link {
@@ -55,9 +65,16 @@ const MenuBarBlock = styled.div`
     justify-content: flex-end;
     font-size: 50px;
     background: rgba(0, 0, 0, 0.1);
-  }
-  .FiMenu {
-    cursor: pointer;
+    .toggleIcon {
+      width: 50px;
+      height: 50px;
+      margin-right: 35px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      transition: 0.125s all ease-in;
+    }
   }
 
   @media (max-width: 1024px) {
@@ -70,36 +87,36 @@ function MenuBar() {
     console.log(toggle);
     setToggle(!toggle);
   };
-  const home = useRef();
-  const intro = useRef();
 
-  /*const onChangeScroll = (param) => {
-    const location = param.current.offsetTop;
-    window.scrollTo({ top: location, behavior: "smooth" });
-  };*/
   return (
     <MenuBarBlock>
       <div className="MenuUlBlock">
         <div className="toggleBtn">
-          <FiMenu className="FiMenu" onClick={onToggle} />
+          <div className="toggleIcon" onClick={onToggle}>
+            {toggle ? <FiXCircle /> : <FiMenu className="FiMenu" />}
+          </div>
         </div>
 
         <ul className={toggle ? "MenuUl" : ""}>
           <li>
-            <div className="link" ref={home}>
+            <div className="link">
               <AnchorLink href="#Home">HOME</AnchorLink>
             </div>
           </li>
           <li>
-            <div className="link" ref={intro}>
+            <div className="link">
               <AnchorLink href="#Intro">INTRO</AnchorLink>
             </div>
           </li>
           <li>
-            <div className="link">SKILLS</div>
+            <div className="link">
+              <AnchorLink href="#Project">PROJECT</AnchorLink>
+            </div>
           </li>
           <li>
-            <div className="link">CONTACT</div>
+            <div className="link">
+              <AnchorLink href="#Contact">CONTACT</AnchorLink>
+            </div>
           </li>
         </ul>
       </div>

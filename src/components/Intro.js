@@ -26,6 +26,10 @@ const IntroBlock = styled.div`
   align-items: center;
   justify-content: center;
   border-bottom: 1px solid black;
+
+  @media (max-width: 1024px) {
+    flex-direction: column;
+  }
 `;
 const AboutBlock = styled.div`
   width: 50%;
@@ -56,9 +60,13 @@ const ProfileContent = styled.div`
     border-bottom: 1px solid black;
   }
   p {
-    font-size: 24px;
+    font-size: 18px;
     font-weight: bold;
-    line-height: 5px;
+    line-height: 10px;
+
+    @media (max-width: 1024px) {
+      line-height: 30px;
+    }
   }
 `;
 const SkillBlock = styled.div`
@@ -84,11 +92,18 @@ const SkillBlock = styled.div`
     align-items: center;
     width: 100%;
 
+    @media (max-width: 1024px) {
+      flex-direction: column;
+    }
+
     .frontEnd {
       width: 33%;
       display: flex;
       flex-direction: column;
       margin-top: 10px;
+      @media (max-width: 1024px) {
+        width: 100%;
+      }
       .html-css {
         display: flex;
         justify-content: center;
@@ -172,6 +187,9 @@ const SkillBlock = styled.div`
       width: 33%;
       display: flex;
       flex-direction: column;
+      @media (max-width: 1024px) {
+        width: 100%;
+      }
 
       .node {
         display: flex;
@@ -250,9 +268,11 @@ const SkillBlock = styled.div`
     }
     .db {
       width: 33%;
-      background: white;
       display: flex;
       flex-direction: column;
+      @media (max-width: 1024px) {
+        width: 100%;
+      }
       .oracle {
         display: flex;
         justify-content: center;

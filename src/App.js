@@ -1,10 +1,11 @@
 import React from "react";
 import { createGlobalStyle } from "styled-components";
 
+import MenuBar from "./components/MenuBar";
 import Main from "./components/Main";
 import Intro from "./components/Intro";
-import Skill from "./components/Skill";
-import MenuBar from "./components/MenuBar";
+import Project from "./components/Project";
+import Contact from "./components/Contact";
 
 const GlobalStyle = createGlobalStyle`
 body{
@@ -25,8 +26,12 @@ function App() {
       <div id="Intro">
         <Intro />
       </div>
-
-      <Skill />
+      <div id="Project">
+        <Project />
+      </div>
+      <div id="Contact">
+        <Contact />
+      </div>
     </>
   );
 }

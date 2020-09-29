@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-const SkillBlock = styled.div`
+const ProjectBlock = styled.div`
   margin-top: 400px;
   max-width: 1400px;
   height: 800px;
@@ -10,10 +10,11 @@ const SkillBlock = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  border-bottom: 1px solid black;
 `;
 
-function Skill() {
-  return <SkillBlock>스킬 페이지 입니다.</SkillBlock>;
+function Project() {
+  return <ProjectBlock>프로젝트 페이지 입니다.</ProjectBlock>;
 }
 
-export default Skill;
+export default Project;

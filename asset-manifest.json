@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/sikang-portfolio/static/css/main.5ecd60fb.chunk.css",
-    "main.js": "/sikang-portfolio/static/js/main.d6f877fe.chunk.js",
-    "main.js.map": "/sikang-portfolio/static/js/main.d6f877fe.chunk.js.map",
+    "main.js": "/sikang-portfolio/static/js/main.677cc887.chunk.js",
+    "main.js.map": "/sikang-portfolio/static/js/main.677cc887.chunk.js.map",
     "runtime-main.js": "/sikang-portfolio/static/js/runtime-main.2459b880.js",
     "runtime-main.js.map": "/sikang-portfolio/static/js/runtime-main.2459b880.js.map",
-    "static/js/2.336a8fb9.chunk.js": "/sikang-portfolio/static/js/2.336a8fb9.chunk.js",
-    "static/js/2.336a8fb9.chunk.js.map": "/sikang-portfolio/static/js/2.336a8fb9.chunk.js.map",
+    "static/js/2.ed2ee5ca.chunk.js": "/sikang-portfolio/static/js/2.ed2ee5ca.chunk.js",
+    "static/js/2.ed2ee5ca.chunk.js.map": "/sikang-portfolio/static/js/2.ed2ee5ca.chunk.js.map",
     "index.html": "/sikang-portfolio/index.html",
-    "precache-manifest.6326ca2e4bdcaaa0e6cca20a65287e43.js": "/sikang-portfolio/precache-manifest.6326ca2e4bdcaaa0e6cca20a65287e43.js",
+    "precache-manifest.2961ea92bff249b772ade09a9eda3e0b.js": "/sikang-portfolio/precache-manifest.2961ea92bff249b772ade09a9eda3e0b.js",
     "service-worker.js": "/sikang-portfolio/service-worker.js",
     "static/css/main.5ecd60fb.chunk.css.map": "/sikang-portfolio/static/css/main.5ecd60fb.chunk.css.map",
-    "static/js/2.336a8fb9.chunk.js.LICENSE.txt": "/sikang-portfolio/static/js/2.336a8fb9.chunk.js.LICENSE.txt",
+    "static/js/2.ed2ee5ca.chunk.js.LICENSE.txt": "/sikang-portfolio/static/js/2.ed2ee5ca.chunk.js.LICENSE.txt",
     "static/media/dreamer.jpg": "/sikang-portfolio/static/media/dreamer.117a30f0.jpg",
     "static/media/html.png": "/sikang-portfolio/static/media/html.fb1e7f9d.png",
     "static/media/linux.png": "/sikang-portfolio/static/media/linux.fd2220db.png",
@@ -20,12 +20,13 @@
     "static/media/oracle.png": "/sikang-portfolio/static/media/oracle.110de0e6.png",
     "static/media/python.png": "/sikang-portfolio/static/media/python.22eeecf9.png",
     "static/media/react.png": "/sikang-portfolio/static/media/react.70f87bba.png",
-    "static/media/sass.png": "/sikang-portfolio/static/media/sass.6597cc35.png"
+    "static/media/sass.png": "/sikang-portfolio/static/media/sass.6597cc35.png",
+    "static/media/winter.jpg": "/sikang-portfolio/static/media/winter.0c9be9db.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.2459b880.js",
-    "static/js/2.336a8fb9.chunk.js",
+    "static/js/2.ed2ee5ca.chunk.js",
     "static/css/main.5ecd60fb.chunk.css",
-    "static/js/main.d6f877fe.chunk.js"
+    "static/js/main.677cc887.chunk.js"
   ]
 }

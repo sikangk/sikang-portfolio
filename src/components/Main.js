@@ -22,7 +22,6 @@ const MainBlock = styled.div`
   align-items: center;
   justify-content: center;
   position: relative;
-  border-bottom: 1px solid black;
 
   .content {
     background: 50% 100% / 50% 50% no-repeat

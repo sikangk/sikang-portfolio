@@ -26,7 +26,6 @@ const IntroBlock = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  border-bottom: 1px solid black;
   background: url(${winter});
   background-size: cover;
   background-attachment: fixed;

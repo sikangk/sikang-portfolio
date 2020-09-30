@@ -1,19 +1,91 @@
 import React from "react";
 import styled from "styled-components";
+import { FiMail } from "react-icons/fi";
+import {
+  AiFillGithub,
+  AiOutlineInstagram,
+  AiOutlineFacebook,
+} from "react-icons/ai";
 
 const ContactBlock = styled.div`
-  margin-top: 400px;
+  margin-top: 800px;
   max-width: 1400px;
-  height: 800px;
   background: white;
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+  h3 {
+    font-size: 48px;
+    font-weight: bold;
+    border-bottom: 1px solid black;
+  }
+  span {
+    font-size: 36px;
+    font-weight: bold;
+  }
+  .contactImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+    a {
+      font-size: 80px;
+      margin-left: 20px;
+      text-decoration: none;
+      color: black;
+      cursor: pointer;
+    }
+  }
+`;
+const Footer = styled.div`
+  width: 100%;
+  margin-top: 200px;
+  border-top: 3px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 `;
 
 function Contact() {
-  return <ContactBlock>컨택트 사이트 입니다.</ContactBlock>;
+  return (
+    <ContactBlock>
+      <h3>CONTACT ME</h3>
+      <span>
+        <FiMail />
+        updream4@naver.com
+      </span>
+      <div className="contactImage">
+        <a
+          href="https://github.com/sikangk"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <AiFillGithub />
+        </a>
+        <a
+          href="https://www.instagram.com/sikangk/?hl=ko"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <AiOutlineInstagram />
+        </a>
+        <a
+          href="https://www.facebook.com/profile.php?id=100003571946430"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <AiOutlineFacebook />
+        </a>
+      </div>
+      <Footer>
+        <p>Copyright © 2020 곽시강 all right reserved</p>
+        <p>본사이트는 React로 제작되었습니다.</p>
+      </Footer>
+    </ContactBlock>
+  );
 }
 
 export default Contact;

@@ -68,6 +68,9 @@ const ProfileContent = styled.div`
     @media (max-width: 1024px) {
       line-height: 30px;
     }
+    @media (max-width: 768px) {
+      line-height: 20px;
+    }
   }
 `;
 const SkillBlock = styled.div`

@@ -26,6 +26,9 @@ const ContactBlock = styled.div`
   span {
     font-size: 36px;
     font-weight: bold;
+    @media (max-width: 768px) {
+      font-size: 24px;
+    }
   }
   .contactImage {
     display: flex;

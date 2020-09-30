@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "bd8afad8cd604aad896fc61c9b80d8f6",
+    "revision": "7fcbd73ee5b74598e87c5b66b7f963ae",
     "url": "/sikang-portfolio/index.html"
   },
   {
-    "revision": "5eed2ea939284a364879",
+    "revision": "06b403a22175fe4e4732",
     "url": "/sikang-portfolio/static/css/main.5ecd60fb.chunk.css"
   },
   {
-    "revision": "dc5b4bf03572ea508139",
-    "url": "/sikang-portfolio/static/js/2.ed2ee5ca.chunk.js"
+    "revision": "3b0e803f6c2e68a7e430",
+    "url": "/sikang-portfolio/static/js/2.aea35222.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/sikang-portfolio/static/js/2.ed2ee5ca.chunk.js.LICENSE.txt"
+    "url": "/sikang-portfolio/static/js/2.aea35222.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "5eed2ea939284a364879",
-    "url": "/sikang-portfolio/static/js/main.677cc887.chunk.js"
+    "revision": "06b403a22175fe4e4732",
+    "url": "/sikang-portfolio/static/js/main.ff32171b.chunk.js"
   },
   {
     "revision": "3b72b3499c560d824ccb",
@@ -28,12 +28,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/sikang-portfolio/static/media/dreamer.117a30f0.jpg"
   },
   {
+    "revision": "cdd391511a279e691200d08fce0968c6",
+    "url": "/sikang-portfolio/static/media/githubclone.cdd39151.PNG"
+  },
+  {
     "revision": "fb1e7f9db2540c3194a9179094a925e2",
     "url": "/sikang-portfolio/static/media/html.fb1e7f9d.png"
   },
   {
     "revision": "fd2220dbb5a9c400d06b771a0a6b01ed",
     "url": "/sikang-portfolio/static/media/linux.fd2220db.png"
+  },
+  {
+    "revision": "873fe66e6274fa0131ecee8bfc955da0",
+    "url": "/sikang-portfolio/static/media/momentumclone.873fe66e.PNG"
   },
   {
     "revision": "bab2c760c60f17191cb3a002e08a3dbf",
@@ -56,8 +64,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/sikang-portfolio/static/media/react.70f87bba.png"
   },
   {
+    "revision": "c0ba750c71d06b464169de2e60c4a0cd",
+    "url": "/sikang-portfolio/static/media/reactmovie.c0ba750c.PNG"
+  },
+  {
     "revision": "6597cc35589236a430e20f4d2adf09a6",
     "url": "/sikang-portfolio/static/media/sass.6597cc35.png"
+  },
+  {
+    "revision": "e095a4cbcf2f89db11f7f4d5c4d5f2c4",
+    "url": "/sikang-portfolio/static/media/todolist.e095a4cb.PNG"
   },
   {
     "revision": "0c9be9db3b0b2df045a2b29a037c83dd",

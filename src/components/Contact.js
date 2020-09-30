@@ -7,6 +7,8 @@ import {
   AiOutlineFacebook,
 } from "react-icons/ai";
 
+import { useScrollFadeIn } from "../customhooks/ScrollFadeIn";
+
 const ContactBlock = styled.div`
   margin-top: 800px;
   max-width: 1400px;
@@ -32,7 +34,7 @@ const ContactBlock = styled.div`
     margin-top: 150px;
     a {
       font-size: 80px;
-      margin-left: 20px;
+      margin-right: 20px;
       text-decoration: none;
       color: black;
       cursor: pointer;
@@ -50,14 +52,17 @@ const Footer = styled.div`
 `;
 
 function Contact() {
+  const animatedContactTitle = useScrollFadeIn();
+  const animatedEmail = useScrollFadeIn();
+  const animatedSns = useScrollFadeIn();
   return (
     <ContactBlock>
-      <h3>CONTACT ME</h3>
-      <span>
+      <h3 {...animatedContactTitle}>CONTACT ME</h3>
+      <span {...animatedEmail}>
         <FiMail />
         updream4@naver.com
       </span>
-      <div className="contactImage">
+      <div className="contactImage" {...animatedSns}>
         <a
           href="https://github.com/sikangk"
           target="_blank"

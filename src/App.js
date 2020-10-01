@@ -10,7 +10,10 @@ import Contact from "./components/Contact";
 import sky from "./image/sky.jpg";
 
 const GlobalStyle = createGlobalStyle`
-
+html,body{
+  width:100%;
+  height:100%;
+}
 body{
   background-position:center center;
   background-repeat: no-repeat;

@@ -12,7 +12,8 @@ import sky from "./image/sky.jpg";
 const GlobalStyle = createGlobalStyle`
 
 body{
-  
+  background-position:center center;
+  background-repeat: no-repeat;
   box-sizing:border-box;
   font-family: 'Roboto';
   background: url(${sky});

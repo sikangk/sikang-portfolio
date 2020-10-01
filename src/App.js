@@ -22,6 +22,11 @@ body{
   background: url(${sky});
   background-attachment: fixed;
   background-size:cover;
+  .wrapper{
+    width:100%;
+    height:100%;
+    overflow:hidden;
+  }
 }
 `;
 
@@ -29,18 +34,20 @@ function App() {
   return (
     <>
       <GlobalStyle />
-      <MenuBar />
-      <div id="Home">
-        <Main />
-      </div>
-      <div id="Intro">
-        <Intro />
-      </div>
-      <div id="Project">
-        <Project />
-      </div>
-      <div id="Contact">
-        <Contact />
+      <div className="wrapper">
+        <MenuBar />
+        <div id="Home">
+          <Main />
+        </div>
+        <div id="Intro">
+          <Intro />
+        </div>
+        <div id="Project">
+          <Project />
+        </div>
+        <div id="Contact">
+          <Contact />
+        </div>
       </div>
     </>
   );

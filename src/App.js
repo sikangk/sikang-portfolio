@@ -7,13 +7,17 @@ import Intro from "./components/Intro";
 import Project from "./components/Project";
 import Contact from "./components/Contact";
 
+import sky from "./image/sky.jpg";
+
 const GlobalStyle = createGlobalStyle`
 
 body{
-  background:white;
+  
   box-sizing:border-box;
   font-family: 'Roboto';
-  
+  background: url(${sky});
+  background-attachment: fixed;
+  background-size:cover;
 }
 `;
 

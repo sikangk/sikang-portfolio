@@ -26,9 +26,9 @@ const IntroBlock = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  background: url(${sky});
+
   background-size: cover;
-  background-attachment: fixed;
+
   @media (max-width: 1024px) {
     flex-direction: column;
   }

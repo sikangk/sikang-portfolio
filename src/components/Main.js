@@ -15,7 +15,7 @@ const glow = keyframes`
 const MainBlock = styled.div`
   max-width: 1400px;
   height: 800px;
-  background: white;
+  background: rgba(255, 255, 255, 0.5);
   margin: 0 auto;
   display: flex;
   flex-direction: column;

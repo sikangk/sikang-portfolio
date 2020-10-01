@@ -8,9 +8,11 @@ import Project from "./components/Project";
 import Contact from "./components/Contact";
 
 const GlobalStyle = createGlobalStyle`
+
 body{
   background:white;
   box-sizing:border-box;
+  font-family: 'Roboto';
   
 }
 `;

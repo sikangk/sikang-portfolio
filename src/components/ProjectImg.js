@@ -8,12 +8,12 @@ const Img = styled.img`
   border: 1px solid #d6d6d6;
   box-shadow: 0px 2px 3px 0px;
   &:hover {
-    box-shadow: 0 8px 20px 0px rgba(0, 0, 0, 0.125);
-    transition: 1s;
+    box-shadow: 0 20px 20px 0px rgba(0, 0, 0, 0.9);
+    transition: 1.5s;
   }
   &:active {
-    box-shadow: 0 8px 20px 0px rgba(0, 0, 0, 0.125);
-    transition: 1s;
+    box-shadow: 0 20px 20px 0px rgba(0, 0, 0, 0.9);
+    transition: 1.5s;
   }
 
   @media (max-width: 768px) {
@@ -29,6 +29,7 @@ function ProjectImg({ title, content, img, site, github }) {
   const onRemoveModal = () => {
     setModal(false);
   };
+
   return (
     <>
       <Img src={img} onClick={onModal} />

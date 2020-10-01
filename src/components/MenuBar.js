@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styled, { keyframes } from "styled-components";
-import { AiOutlineMenuFold, AiOutlineMenuUnfold } from "react-icons/ai";
+import { FaCaretSquareDown, FaCaretSquareUp } from "react-icons/fa";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 const fadeIn = keyframes`
 from{opacity:0;
@@ -34,10 +34,9 @@ const MenuBarBlock = styled.div`
     align-items: center;
     justify-content: center;
     list-style: none;
-    background: rgba(250, 250, 250, 0.1);
     position: absolute;
     right: 0;
-    margin-right: 20px;
+    margin-right: 8px;
     animation-duration: 3s;
     animation-timing-function: ease-out;
     animation-name: ${fadeIn};
@@ -49,7 +48,7 @@ const MenuBarBlock = styled.div`
     margin-bottom: 20px;
     border-bottom: 1px solid black;
     &:hover {
-      background: rgb(0, 0, 0, 0.6);
+      background: rgb(0, 0, 0, 0.3);
     }
   }
 
@@ -71,7 +70,6 @@ const MenuBarBlock = styled.div`
       justify-content: center;
       align-items: center;
       cursor: pointer;
-      transform: rotate(-90deg);
     }
   }
 
@@ -91,7 +89,7 @@ function MenuBar() {
       <div className="MenuUlBlock">
         <div className="toggleBtn">
           <div className="toggleIcon" onClick={onToggle}>
-            {toggle ? <AiOutlineMenuFold /> : <AiOutlineMenuUnfold />}
+            {toggle ? <FaCaretSquareDown /> : <FaCaretSquareUp />}
           </div>
         </div>
 

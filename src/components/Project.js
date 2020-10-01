@@ -19,6 +19,7 @@ const ProjectBlock = styled.div`
     font-size: 48px;
     font-weight: bold;
     border-bottom: 1px solid black;
+    text-shadow: 3px 3px 3px rgb(0, 0, 0);
   }
 `;
 

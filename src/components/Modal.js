@@ -1,6 +1,7 @@
 import React from "react";
 import styled, { keyframes } from "styled-components";
 import { ImLink, ImGithub } from "react-icons/im";
+import { AiFillCloseSquare } from "react-icons/ai";
 
 const fadeIn = keyframes`
 from{
@@ -21,6 +22,7 @@ to{
 `;
 
 const ModalBackground = styled.div`
+  overflow: hidden;
   position: fixed;
   left: 0px;
   top: 0px;
@@ -52,29 +54,48 @@ const ModalBlock = styled.div`
   animation-timing-function: ease-out;
   animation-name: ${slideUp};
   animation-fill-mode: forwards;
+  overflow: auto;
+  @media (max-width: 768px) {
+    width: 300px;
+    height: 50vh;
+  }
+  h3 {
+    font-size: 48px;
+    font-weight: bold;
+    border: none !important;
+    margin-bottom: 0;
+    text-shadow: 3px 3px 3px rgb(0, 0, 0);
+
+    @media (max-width: 768px) {
+      font-size: 32px !important;
+    }
+  }
+
   h4 {
     font-size: 24px;
-    margin: 30px 30px;
+    border-top: 1px solid black;
+    margin: 40px 30px;
+    @media (max-width: 768px) {
+      font-size: 16px;
+    }
   }
   a {
-    margin-top: 5px;
+    margin-top: 10px;
     text-decoration: none;
     color: black;
     font-weight: bold;
     cursor: pointer;
   }
-  button {
-    width: 50px;
-    height: 50px;
+  .button {
+    font-size: 50px;
+    margin: 0px;
+    padding: 0px;
     position: absolute;
-    right: 5px;
-    bottom: 5px;
-    background: rgba(0, 0, 0, 0);
-    font-weight: bold;
+    border: none;
+    right: 0;
     cursor: pointer;
-    border-radius: 5px;
-    &:hover {
-      background: rgba(0, 0, 0, 0.3);
+    @media (max-width: 768px) {
+      font-size: 30px;
     }
   }
 `;
@@ -83,6 +104,9 @@ function Modal({ title, content, site, github, onRemoveModal }) {
   return (
     <ModalBackground>
       <ModalBlock>
+        <div className="button" onClick={onRemoveModal}>
+          <AiFillCloseSquare />
+        </div>
         <h3>{title}</h3>
         <a href={site} target="_blank" rel="noopener noreferrer">
           <ImLink />
@@ -93,8 +117,6 @@ function Modal({ title, content, site, github, onRemoveModal }) {
           깃허브 바로가기
         </a>
         <h4>{content}</h4>
-
-        <button onClick={onRemoveModal}>닫기</button>
       </ModalBlock>
     </ModalBackground>
   );

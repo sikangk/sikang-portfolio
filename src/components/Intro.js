@@ -17,7 +17,7 @@ import mysql from "../image/mysql.png";
 import mongodb from "../image/mongodb.png";
 import linux from "../image/linux.png";
 
-import winter from "../image/winter.jpg";
+import sky from "../image/sky.jpg";
 
 const IntroBlock = styled.div`
   margin-top: 400px;
@@ -26,7 +26,7 @@ const IntroBlock = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  background: url(${winter});
+  background: url(${sky});
   background-size: cover;
   background-attachment: fixed;
   @media (max-width: 1024px) {
@@ -54,11 +54,13 @@ const ProfileContent = styled.div`
   align-items: center;
   text-align: center;
   margin: 20px auto;
-  background: rgb(255, 255, 255, 0.3);
+  background: rgb(255, 255, 255, 0.7);
+  border-radius: 10px;
   h3 {
     font-size: 48px;
     font-weight: bold;
     border-bottom: 1px solid black;
+    text-shadow: 3px 3px 3px rgb(0, 0, 0);
   }
   p {
     font-size: 18px;
@@ -91,6 +93,7 @@ const SkillBlock = styled.div`
       font-size: 48px;
       font-weight: bold;
       border-bottom: 1px solid black;
+      text-shadow: 3px 3px 3px rgb(0, 0, 0);
     }
   }
   .skill-body {
@@ -99,7 +102,8 @@ const SkillBlock = styled.div`
     align-items: center;
     width: 100%;
     height: 50%;
-    background: rgb(255, 255, 255, 0.3);
+    background: rgb(255, 255, 255, 0.7);
+    border-radius: 10px;
 
     @media (max-width: 1024px) {
       flex-direction: column;

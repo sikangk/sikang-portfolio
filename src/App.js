@@ -1,5 +1,5 @@
 import React from "react";
-import { createGlobalStyle } from "styled-components";
+import styled, { createGlobalStyle } from "styled-components";
 
 import MenuBar from "./components/MenuBar";
 import Main from "./components/Main";
@@ -15,13 +15,13 @@ html,body{
   height:100%;
 }
 body{
-  background-position:center center;
-  background-repeat: no-repeat;
+  background-position:center center !important;
+  background-repeat: no-repeat !important;
   box-sizing:border-box;
   font-family: 'Roboto';
   background: url(${sky});
-  background-attachment: fixed;
-  background-size:cover;
+  background-attachment: fixed !important;
+  background-size:cover !important;
  
 }
 `;
@@ -30,19 +30,24 @@ function App() {
   return (
     <>
       <GlobalStyle />
-
-      <MenuBar />
-      <div id="Home">
-        <Main />
-      </div>
-      <div id="Intro">
-        <Intro />
-      </div>
-      <div id="Project">
-        <Project />
-      </div>
-      <div id="Contact">
-        <Contact />
+      <div className="first">
+        <div className="bg-wrap">
+          <div className="bg">
+            <MenuBar />
+            <div id="Home">
+              <Main />
+            </div>
+            <div id="Intro">
+              <Intro />
+            </div>
+            <div id="Project">
+              <Project />
+            </div>
+            <div id="Contact">
+              <Contact />
+            </div>
+          </div>
+        </div>
       </div>
     </>
   );

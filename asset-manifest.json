@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/sikang-portfolio/static/css/main.34de6062.chunk.css",
-    "main.js": "/sikang-portfolio/static/js/main.4641724d.chunk.js",
-    "main.js.map": "/sikang-portfolio/static/js/main.4641724d.chunk.js.map",
+    "main.js": "/sikang-portfolio/static/js/main.d715ac0e.chunk.js",
+    "main.js.map": "/sikang-portfolio/static/js/main.d715ac0e.chunk.js.map",
     "runtime-main.js": "/sikang-portfolio/static/js/runtime-main.2459b880.js",
     "runtime-main.js.map": "/sikang-portfolio/static/js/runtime-main.2459b880.js.map",
     "static/js/2.829d9d02.chunk.js": "/sikang-portfolio/static/js/2.829d9d02.chunk.js",
     "static/js/2.829d9d02.chunk.js.map": "/sikang-portfolio/static/js/2.829d9d02.chunk.js.map",
     "index.html": "/sikang-portfolio/index.html",
-    "precache-manifest.6aaaba6ea020af1fdd8499eb3cdcdde8.js": "/sikang-portfolio/precache-manifest.6aaaba6ea020af1fdd8499eb3cdcdde8.js",
+    "precache-manifest.44495724bc58431dde4a2f9f635b6cdc.js": "/sikang-portfolio/precache-manifest.44495724bc58431dde4a2f9f635b6cdc.js",
     "service-worker.js": "/sikang-portfolio/service-worker.js",
     "static/css/main.34de6062.chunk.css.map": "/sikang-portfolio/static/css/main.34de6062.chunk.css.map",
     "static/js/2.829d9d02.chunk.js.LICENSE.txt": "/sikang-portfolio/static/js/2.829d9d02.chunk.js.LICENSE.txt",
@@ -31,6 +31,6 @@
     "static/js/runtime-main.2459b880.js",
     "static/js/2.829d9d02.chunk.js",
     "static/css/main.34de6062.chunk.css",
-    "static/js/main.4641724d.chunk.js"
+    "static/js/main.d715ac0e.chunk.js"
   ]
 }

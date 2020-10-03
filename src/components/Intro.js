@@ -37,6 +37,9 @@ const AboutBlock = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;
 const ProfileCircle = styled.div`
   width: 200px;
@@ -52,8 +55,8 @@ const ProfileContent = styled.div`
   align-items: center;
   text-align: center;
   margin: 20px auto;
-  background: rgb(255, 255, 255, 0.7);
   border-radius: 10px;
+  z-index: -1;
   h3 {
     font-size: 48px;
     font-weight: bold;
@@ -80,6 +83,10 @@ const SkillBlock = styled.div`
   justify-content: center;
   align-items: center;
   margin: 0 20px;
+  @media (max-width: 768px) {
+    width: 100%;
+    margin: 0 auto;
+  }
 
   .skill-header {
     width: 100%;
@@ -100,7 +107,7 @@ const SkillBlock = styled.div`
     align-items: center;
     width: 100%;
     height: 50%;
-    background: rgb(255, 255, 255, 0.7);
+
     border-radius: 10px;
 
     @media (max-width: 1024px) {

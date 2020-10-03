@@ -15,7 +15,7 @@ const glow = keyframes`
     }`;
 const MainBlock = styled.div`
   width: 100%;
-  height: 800px;
+  height: 100vh;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -47,13 +47,11 @@ const MainBlock = styled.div`
       justify-content: center;
       align-items: center;
       flex-direction: column;
-
       max-width: 1400px;
-      height: 30vh;
-      margin: 300px;
-      margin-left: 5px;
+      margin-right: 0;
+      margin-left: 0;
+      margin-top: 300px;
       text-align: center;
-      transition-delay: 0.25s;
 
       .content {
         background: 50% 100% / 50% 50% no-repeat

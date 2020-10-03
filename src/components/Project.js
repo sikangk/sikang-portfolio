@@ -24,7 +24,7 @@ const ProjectBlock = styled.div`
 `;
 
 const ProjectImgBlock = styled.div`
-  width: 100%;
+  width: 80%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   @media (max-width: 1024px) {

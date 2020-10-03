@@ -3,14 +3,11 @@ import styled from "styled-components";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 
 const MenuBarBlock = styled.div`
+  width: 100%;
+  top: 0;
   position: fixed;
-  background: rgba(255, 255, 255, 0.7);
   z-index: 1;
-
-  ul {
-    display: none;
-  }
-
+  background: rgba(0, 0, 0, 0.2);
   .MenuUl {
     width: 100%;
     display: flex;
@@ -21,26 +18,20 @@ const MenuBarBlock = styled.div`
   }
 
   .MenuUl .link {
+    width: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 10px;
-    &:hover {
-      background: rgb(0, 0, 0, 0.3);
-    }
-    .circle {
-      width: 10px;
-      height: 10px;
-      border: 1px solid black;
-      border-radius: 50%;
-      margin-right: 5px;
-    }
   }
 
   .MenuUl li a {
     text-decoration: none;
     font-weight: bold;
     color: black;
+    padding: 10px 10px;
+    &:hover {
+      background: rgb(0, 0, 0, 0.5);
+    }
   }
 
   @media (max-width: 1024px) {
@@ -93,39 +84,57 @@ function MenuBar({ home, intro, project, contact }) {
       <div className="MenuUlBlock">
         <ul className="MenuUl">
           <li>
-            <div className="link">
-              <div
-                className="circle"
-                style={{ background: active === 1 ? "black" : "" }}
-              ></div>
-              <AnchorLink href="#Home">HOME</AnchorLink>
+            <div
+              className="link"
+              style={{
+                background: active === 1 ? "rgb(0, 0, 0, 0.5)" : "",
+              }}
+            >
+              <AnchorLink
+                href="#Home"
+                style={{ color: active === 1 ? "white" : "" }}
+              >
+                HOME
+              </AnchorLink>
             </div>
           </li>
           <li>
-            <div className="link">
-              <div
-                className="circle"
-                style={{ background: active === 2 ? "black" : "" }}
-              ></div>
-              <AnchorLink href="#Intro">INTRO</AnchorLink>
+            <div
+              className="link"
+              style={{ background: active === 2 ? "rgb(0, 0, 0, 0.5)" : "" }}
+            >
+              <AnchorLink
+                href="#Intro"
+                style={{ color: active === 2 ? "white" : "" }}
+              >
+                INTRO
+              </AnchorLink>
             </div>
           </li>
           <li>
-            <div className="link">
-              <div
-                className="circle"
-                style={{ background: active === 3 ? "black" : "" }}
-              ></div>
-              <AnchorLink href="#Project">PROJECT</AnchorLink>
+            <div
+              className="link"
+              style={{ background: active === 3 ? "rgb(0, 0, 0, 0.5)" : "" }}
+            >
+              <AnchorLink
+                href="#Project"
+                style={{ color: active === 3 ? "white" : "" }}
+              >
+                PROJECT
+              </AnchorLink>
             </div>
           </li>
           <li>
-            <div className="link">
-              <div
-                className="circle"
-                style={{ background: active === 4 ? "black" : "" }}
-              ></div>
-              <AnchorLink href="#Contact">CONTACT</AnchorLink>
+            <div
+              className="link"
+              style={{ background: active === 4 ? "rgb(0, 0, 0, 0.5)" : "" }}
+            >
+              <AnchorLink
+                href="#Contact"
+                style={{ color: active === 4 ? "white" : "" }}
+              >
+                CONTACT
+              </AnchorLink>
             </div>
           </li>
         </ul>

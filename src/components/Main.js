@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import styled, { keyframes } from "styled-components";
 import sky from "../image/sky.jpg";
 const reveal = keyframes`
@@ -43,10 +43,17 @@ const MainBlock = styled.div`
     background: url(${sky});
 
     .contentBlock {
-      margin-top: 300px;
-      width: 100vw;
-      height: 200vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      max-width: 1400px;
+      height: 30vh;
+      margin: 300px auto;
       text-align: center;
+      transition-delay: 0.25s;
+      background: rgba(255, 255, 255, 0.8);
       .content {
         background: 50% 100% / 50% 50% no-repeat
           radial-gradient(ellipse at bottom, #000, transparent, transparent);
@@ -67,11 +74,34 @@ const MainBlock = styled.div`
 `;
 
 function Main() {
+  const [scroll, setScroll] = useState({
+    x: 0,
+    y: 0,
+  });
+
+  const onScroll = () => {
+    setScroll({
+      x: window.scrollX,
+      y: window.scrollY,
+    });
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", onScroll);
+
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
   return (
     <MainBlock>
       <div className="bg-wrap">
         <div className="bg">
-          <div className="contentBlock">
+          <div
+            className="contentBlock"
+            style={{
+              opacity: scroll.y > 150 ? "0.1" : "1",
+            }}
+          >
             <div className="content">SIKANG's PORTFOLIO</div>
             <p>곽시강 개인 포트폴리오 사이트입니다.</p>
           </div>

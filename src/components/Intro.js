@@ -17,8 +17,6 @@ import mysql from "../image/mysql.png";
 import mongodb from "../image/mongodb.png";
 import linux from "../image/linux.png";
 
-import sky from "../image/sky.jpg";
-
 const IntroBlock = styled.div`
   margin-top: 400px;
   max-width: 1400px;

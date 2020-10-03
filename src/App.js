@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import { createGlobalStyle } from "styled-components";
 
 import MenuBar from "./components/MenuBar";
@@ -20,23 +20,32 @@ body{
 `;
 
 function App() {
+  const home = useRef(null);
+  const intro = useRef(null);
+  const project = useRef(null);
+  const contact = useRef(null);
   return (
     <>
       <GlobalStyle />
       <div className="first">
         <div className="bg-wrap">
           <div className="bg">
-            <MenuBar />
-            <div id="Home">
+            <MenuBar
+              home={home}
+              intro={intro}
+              project={project}
+              contact={contact}
+            />
+            <div id="Home" ref={home}>
               <Main />
             </div>
-            <div id="Intro">
+            <div id="Intro" ref={intro}>
               <Intro />
             </div>
-            <div id="Project">
+            <div id="Project" ref={project}>
               <Project />
             </div>
-            <div id="Contact">
+            <div id="Contact" ref={contact}>
               <Contact />
             </div>
           </div>

@@ -11,7 +11,7 @@ const reveal = keyframes`
   `;
 const glow = keyframes`
    40% {
-      text-shadow: 0 0 3px #000;
+      text-shadow: 0 0 0px #fff;
     }`;
 const MainBlock = styled.div`
   width: 100%;
@@ -50,24 +50,28 @@ const MainBlock = styled.div`
 
       max-width: 1400px;
       height: 30vh;
-      margin: 300px auto;
+      margin: 300px;
+      margin-left: 5px;
       text-align: center;
       transition-delay: 0.25s;
-      background: rgba(255, 255, 255, 0.8);
+
       .content {
         background: 50% 100% / 50% 50% no-repeat
-          radial-gradient(ellipse at bottom, #000, transparent, transparent);
+          radial-gradient(ellipse at bottom, #fff, transparent, transparent);
         -webkit-background-clip: text;
         background-clip: text;
+        border-bottom: 1px solid #fff;
         color: transparent;
-        font-size: 8vw;
-        text-shadow: 3px 3px 3px rgb(0, 0, 0);
+        font-size: 6vw;
+        text-shadow: 0px 0px 0px rgb(0, 0, 0);
 
         animation: ${reveal} 3000ms ease-in-out forwards 200ms,
           ${glow} 2500ms linear infinite 3000ms;
       }
       p {
         font-weight: bold;
+        color: #fff;
+        text-shadow: 0px 0px 0px rgb(0, 0, 0);
       }
     }
   }
@@ -99,7 +103,7 @@ function Main() {
           <div
             className="contentBlock"
             style={{
-              opacity: scroll.y > 150 ? "0.1" : "1",
+              opacity: scroll.y > 140 ? "0.1" : "1",
             }}
           >
             <div className="content">SIKANG's PORTFOLIO</div>

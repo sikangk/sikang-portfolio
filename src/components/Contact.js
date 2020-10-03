@@ -23,12 +23,10 @@ const ContactBlock = styled.div`
     font-weight: bold;
     border-bottom: 1px solid black;
     text-shadow: 3px 3px 3px rgb(0, 0, 0);
-    z-index: -1;
   }
   span {
     font-size: 36px;
     font-weight: bold;
-    z-index: -1;
 
     @media (max-width: 768px) {
       font-size: 24px;
@@ -39,14 +37,12 @@ const ContactBlock = styled.div`
     justify-content: center;
     align-items: center;
     margin-top: 150px;
-    z-index: -1;
 
     a {
       font-size: 80px;
       text-decoration: none;
       color: black;
       cursor: pointer;
-      z-index: -1;
     }
   }
 `;

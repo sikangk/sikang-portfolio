@@ -22,9 +22,11 @@ const MenuBarBlock = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
   }
 
   .MenuUl li a {
+    width: 100%;
     text-decoration: none;
     font-weight: bold;
     color: black;

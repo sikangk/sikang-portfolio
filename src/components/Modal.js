@@ -33,7 +33,7 @@ const ModalBackground = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
-
+  z-index: 1;
   animation-duration: 0.25s;
   animation-timing-function: ease-out;
   animation-name: ${fadeIn};
@@ -55,6 +55,7 @@ const ModalBlock = styled.div`
   animation-name: ${slideUp};
   animation-fill-mode: forwards;
   overflow: auto;
+
   @media (max-width: 768px) {
     width: 300px;
     height: 50vh;

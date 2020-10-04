@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7db6daab86bea7d3eccfaa01bd5cacf6",
+    "revision": "f6e1b3a365ea705acd5b2330f38c8397",
     "url": "/sikang-portfolio/index.html"
   },
   {
-    "revision": "430bcb9ab7cf800c7c69",
+    "revision": "4b5fcd3d7b34faef93c0",
     "url": "/sikang-portfolio/static/css/main.34de6062.chunk.css"
   },
   {
-    "revision": "9abae371af60a3b845a7",
-    "url": "/sikang-portfolio/static/js/2.bfff4439.chunk.js"
+    "revision": "8fa5ce302c0f292ed9ec",
+    "url": "/sikang-portfolio/static/js/2.6eff133f.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/sikang-portfolio/static/js/2.bfff4439.chunk.js.LICENSE.txt"
+    "url": "/sikang-portfolio/static/js/2.6eff133f.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "430bcb9ab7cf800c7c69",
-    "url": "/sikang-portfolio/static/js/main.55186ed7.chunk.js"
+    "revision": "4b5fcd3d7b34faef93c0",
+    "url": "/sikang-portfolio/static/js/main.49e2826d.chunk.js"
   },
   {
     "revision": "3b72b3499c560d824ccb",

@@ -3,7 +3,7 @@ import styled from "styled-components";
 import Modal from "./Modal";
 const Img = styled.img`
   width: 100%;
-  height: 70vh;
+  height: 50vh;
   cursor: pointer;
   border: 1px solid #d6d6d6;
   box-shadow: 0px 2px 3px 0px;
@@ -14,10 +14,6 @@ const Img = styled.img`
   &:active {
     box-shadow: 0 20px 20px 0px rgba(0, 0, 0, 0.9);
     transition: 1.5s;
-  }
-
-  @media (max-width: 768px) {
-    height: 50vh;
   }
 `;
 

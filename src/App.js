@@ -15,6 +15,7 @@ html,body{
 body{
   box-sizing:border-box;
   font-family: 'Roboto';
+  background:#f3f0ff;
    
 }
 `;

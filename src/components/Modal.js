@@ -43,7 +43,7 @@ const ModalBackground = styled.div`
 const ModalBlock = styled.div`
   position: relative;
   max-width: 500px;
-  height: 80vh;
+  height: 60vh;
   display: flex;
   align-items: center;
   flex-direction: column;

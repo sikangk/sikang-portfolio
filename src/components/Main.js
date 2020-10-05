@@ -47,9 +47,6 @@ const MainBlock = styled.div`
       justify-content: center;
       align-items: center;
       flex-direction: column;
-      max-width: 1400px;
-      margin-right: 0;
-      margin-left: 0;
       margin-top: 300px;
       text-align: center;
 
@@ -61,6 +58,7 @@ const MainBlock = styled.div`
         border-bottom: 1px solid #fff;
         color: transparent;
         font-size: 6vw;
+        font-weight: bold;
         text-shadow: 0px 0px 0px rgb(0, 0, 0);
 
         animation: ${reveal} 3000ms ease-in-out forwards 200ms,

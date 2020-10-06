@@ -41,6 +41,7 @@ const MainBlock = styled.div`
     height: 100%;
     background-size: cover;
     background: url(${sky});
+    background-repeat: no-repeat;
 
     .contentBlock {
       display: flex;

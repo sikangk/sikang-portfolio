@@ -16,7 +16,6 @@ const glow = keyframes`
 const MainBlock = styled.div`
   max-width: 1900px;
   height: 100vh;
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -24,12 +23,12 @@ const MainBlock = styled.div`
   position: relative;
 
   .bg-wrap {
+    width: 100%;
+    height: 100%;
     clip: rect(0, auto, auto, 0);
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
   }
 
   .bg {

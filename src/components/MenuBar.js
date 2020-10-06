@@ -54,7 +54,7 @@ function MenuBar({ home, intro, project, contact }) {
     const projectRectTop = projectRect.top + scrollTop - 50;
 
     const contactRect = contact.current.getBoundingClientRect();
-    const contactRectTop = contactRect.top + scrollTop - 50;
+    const contactRectTop = contactRect.top + scrollTop;
 
     if (scrollTop < homeRectTop) {
       setActive(0);

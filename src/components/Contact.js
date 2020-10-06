@@ -12,7 +12,8 @@ import { useScrollFadeIn } from "../customhooks/ScrollFadeIn";
 const ContactBlock = styled.div`
   margin-top: 800px;
   max-width: 1400px;
-  margin: 200px auto;
+  margin: 0 auto;
+  margin-top: 200px;
   display: flex;
   align-items: center;
   justify-content: center;

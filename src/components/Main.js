@@ -14,7 +14,7 @@ const glow = keyframes`
       text-shadow: 0 0 0px #fff;
     }`;
 const MainBlock = styled.div`
-  width: 100%;
+  max-width: 1900px;
   height: 100vh;
   margin: 0 auto;
   display: flex;
@@ -22,7 +22,6 @@ const MainBlock = styled.div`
   align-items: center;
   justify-content: center;
   position: relative;
-  background-size: cover;
 
   .bg-wrap {
     clip: rect(0, auto, auto, 0);
@@ -31,7 +30,6 @@ const MainBlock = styled.div`
     left: 0;
     width: 100%;
     height: 100%;
-    background-size: cover;
   }
 
   .bg {

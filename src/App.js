@@ -28,29 +28,18 @@ function App() {
   return (
     <>
       <GlobalStyle />
-      <div className="first">
-        <div className="bg-wrap">
-          <div className="bg">
-            <MenuBar
-              home={home}
-              intro={intro}
-              project={project}
-              contact={contact}
-            />
-            <div id="Home" ref={home}>
-              <Main />
-            </div>
-            <div id="Intro" ref={intro}>
-              <Intro />
-            </div>
-            <div id="Project" ref={project}>
-              <Project />
-            </div>
-            <div id="Contact" ref={contact}>
-              <Contact />
-            </div>
-          </div>
-        </div>
+      <MenuBar home={home} intro={intro} project={project} contact={contact} />
+      <div id="Home" ref={home}>
+        <Main />
+      </div>
+      <div id="Intro" ref={intro}>
+        <Intro />
+      </div>
+      <div id="Project" ref={project}>
+        <Project />
+      </div>
+      <div id="Contact" ref={contact}>
+        <Contact />
       </div>
     </>
   );

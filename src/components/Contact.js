@@ -26,6 +26,7 @@ const ContactBlock = styled.div`
     text-shadow: 3px 3px 3px rgb(0, 0, 0);
   }
   span {
+    margin-top: 150px;
     font-size: 36px;
     font-weight: bold;
 
@@ -37,7 +38,7 @@ const ContactBlock = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 150px;
+    margin-top: 50px;
 
     a {
       font-size: 80px;
@@ -49,7 +50,7 @@ const ContactBlock = styled.div`
 `;
 const Footer = styled.div`
   width: 100%;
-  margin-top: 200px;
+  margin-top: 150px;
   border-top: 3px solid black;
   display: flex;
   align-items: center;

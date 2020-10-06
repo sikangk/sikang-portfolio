@@ -50,20 +50,6 @@ const MainBlock = styled.div`
       margin-top: 300px;
       text-align: center;
 
-      .content {
-        background: 50% 100% / 50% 50% no-repeat
-          radial-gradient(ellipse at bottom, #fff, transparent, transparent);
-        -webkit-background-clip: text;
-        background-clip: text;
-        border-bottom: 1px solid #fff;
-        color: transparent;
-        font-size: 6vw;
-        font-weight: bold;
-        text-shadow: 0px 0px 0px rgb(0, 0, 0);
-
-        animation: ${reveal} 3000ms ease-in-out forwards 200ms,
-          ${glow} 2500ms linear infinite 3000ms;
-      }
       p {
         font-weight: bold;
         color: #fff;

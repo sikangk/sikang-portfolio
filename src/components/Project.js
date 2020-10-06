@@ -42,7 +42,7 @@ const PROJECT_ARRAY = [
     content:
       "리액트로 영화 api를 이용한 영화앱을 만들어보며, 리액트 환경에서 api 사용하는법을 공부했습니다.",
     img: img1,
-    site: "sikangk.github.io/react-movieapp",
+    site: "https://sikangk.github.io/react-movieapp",
     github: "https://github.com/sikangk/react-movieapp",
   },
   {

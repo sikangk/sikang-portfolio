@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/sikang-portfolio/precache-manifest.8190805d38123bf64a350239dee3ab84.js"
+  "/sikang-portfolio/precache-manifest.c1b57ae085b0f523ee095b1c16279c6b.js"
 );
 
 self.addEventListener('message', (event) => {

@@ -14,7 +14,7 @@ const glow = keyframes`
       text-shadow: 0 0 0px #fff;
     }`;
 const MainBlock = styled.div`
-  max-width: 1900px;
+  width: 100%;
   height: 100vh;
   display: flex;
   flex-direction: column;

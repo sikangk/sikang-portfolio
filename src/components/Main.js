@@ -15,6 +15,7 @@ const glow = keyframes`
     }`;
 const MainBlock = styled.div`
   max-width: 1800px;
+  margin: 0 auto;
   height: 100vh;
   display: flex;
   flex-direction: column;

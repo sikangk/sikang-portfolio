@@ -14,7 +14,7 @@ const glow = keyframes`
       text-shadow: 0 0 0px #fff;
     }`;
 const MainBlock = styled.div`
-  width: 100vw;
+  max-width: 1800px;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -23,7 +23,7 @@ const MainBlock = styled.div`
   position: relative;
 
   .bg-wrap {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     clip: rect(0, auto, auto, 0);
     position: absolute;
@@ -40,7 +40,7 @@ const MainBlock = styled.div`
     left: 0;
     right: 0;
     bottom: 0;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     background-size: cover;
     background: url(${sky});

@@ -22,6 +22,7 @@ const MainBlock = styled.div`
   align-items: center;
   justify-content: center;
   position: relative;
+  background-size: cover;
 
   .bg-wrap {
     clip: rect(0, auto, auto, 0);
@@ -30,6 +31,7 @@ const MainBlock = styled.div`
     left: 0;
     width: 100%;
     height: 100%;
+    background-size: cover;
   }
 
   .bg {

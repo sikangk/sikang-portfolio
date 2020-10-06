@@ -52,7 +52,7 @@ const MainBlock = styled.div`
       justify-content: center;
       align-items: center;
       flex-direction: column;
-      margin-top: 400px;
+      margin-top: 50vh;
       text-align: center;
 
       .content {

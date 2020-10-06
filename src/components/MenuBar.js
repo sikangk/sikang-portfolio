@@ -29,6 +29,7 @@ const MenuBarBlock = styled.div`
     width: 100%;
     text-decoration: none;
     font-weight: bold;
+    text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
     color: black;
     padding: 10px 10px;
     &:hover {

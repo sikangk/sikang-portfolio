@@ -1,17 +1,19 @@
 {
   "files": {
     "main.css": "/sikang-portfolio/static/css/main.34de6062.chunk.css",
-    "main.js": "/sikang-portfolio/static/js/main.e0c1d395.chunk.js",
-    "main.js.map": "/sikang-portfolio/static/js/main.e0c1d395.chunk.js.map",
+    "main.js": "/sikang-portfolio/static/js/main.0fdd599e.chunk.js",
+    "main.js.map": "/sikang-portfolio/static/js/main.0fdd599e.chunk.js.map",
     "runtime-main.js": "/sikang-portfolio/static/js/runtime-main.2459b880.js",
     "runtime-main.js.map": "/sikang-portfolio/static/js/runtime-main.2459b880.js.map",
-    "static/js/2.6eff133f.chunk.js": "/sikang-portfolio/static/js/2.6eff133f.chunk.js",
-    "static/js/2.6eff133f.chunk.js.map": "/sikang-portfolio/static/js/2.6eff133f.chunk.js.map",
+    "static/css/2.7ee41cbf.chunk.css": "/sikang-portfolio/static/css/2.7ee41cbf.chunk.css",
+    "static/js/2.163cbb52.chunk.js": "/sikang-portfolio/static/js/2.163cbb52.chunk.js",
+    "static/js/2.163cbb52.chunk.js.map": "/sikang-portfolio/static/js/2.163cbb52.chunk.js.map",
     "index.html": "/sikang-portfolio/index.html",
-    "precache-manifest.b8c37f0384f77080f1d34a44686f9087.js": "/sikang-portfolio/precache-manifest.b8c37f0384f77080f1d34a44686f9087.js",
+    "precache-manifest.e4467581de52dd6491f613f8ab05e848.js": "/sikang-portfolio/precache-manifest.e4467581de52dd6491f613f8ab05e848.js",
     "service-worker.js": "/sikang-portfolio/service-worker.js",
+    "static/css/2.7ee41cbf.chunk.css.map": "/sikang-portfolio/static/css/2.7ee41cbf.chunk.css.map",
     "static/css/main.34de6062.chunk.css.map": "/sikang-portfolio/static/css/main.34de6062.chunk.css.map",
-    "static/js/2.6eff133f.chunk.js.LICENSE.txt": "/sikang-portfolio/static/js/2.6eff133f.chunk.js.LICENSE.txt",
+    "static/js/2.163cbb52.chunk.js.LICENSE.txt": "/sikang-portfolio/static/js/2.163cbb52.chunk.js.LICENSE.txt",
     "static/media/dreamer.jpg": "/sikang-portfolio/static/media/dreamer.117a30f0.jpg",
     "static/media/githubclone.PNG": "/sikang-portfolio/static/media/githubclone.cdd39151.PNG",
     "static/media/html.png": "/sikang-portfolio/static/media/html.fb1e7f9d.png",
@@ -24,13 +26,15 @@
     "static/media/react.png": "/sikang-portfolio/static/media/react.70f87bba.png",
     "static/media/reactmovie.PNG": "/sikang-portfolio/static/media/reactmovie.c0ba750c.PNG",
     "static/media/sass.png": "/sikang-portfolio/static/media/sass.6597cc35.png",
-    "static/media/sky.jpg": "/sikang-portfolio/static/media/sky.d0a87387.jpg",
+    "static/media/sky.jpg": "/sikang-portfolio/static/media/sky.7f0a84f6.jpg",
+    "static/media/slick-theme.css": "/sikang-portfolio/static/media/slick.f97e3bbf.svg",
     "static/media/todolist.PNG": "/sikang-portfolio/static/media/todolist.e095a4cb.PNG"
   },
   "entrypoints": [
     "static/js/runtime-main.2459b880.js",
-    "static/js/2.6eff133f.chunk.js",
+    "static/css/2.7ee41cbf.chunk.css",
+    "static/js/2.163cbb52.chunk.js",
     "static/css/main.34de6062.chunk.css",
-    "static/js/main.e0c1d395.chunk.js"
+    "static/js/main.0fdd599e.chunk.js"
   ]
 }

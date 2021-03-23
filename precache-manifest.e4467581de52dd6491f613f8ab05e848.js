@@ -1,23 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9b46ff5dcce04506289257b8a9aac48c",
+    "revision": "944163c630b67ad8391b15872857d52b",
     "url": "/sikang-portfolio/index.html"
   },
   {
-    "revision": "fe1b2590bc1430eca867",
+    "revision": "af1d53324dd9d5ecff49",
+    "url": "/sikang-portfolio/static/css/2.7ee41cbf.chunk.css"
+  },
+  {
+    "revision": "8f07f7185634134cd4d4",
     "url": "/sikang-portfolio/static/css/main.34de6062.chunk.css"
   },
   {
-    "revision": "8fa5ce302c0f292ed9ec",
-    "url": "/sikang-portfolio/static/js/2.6eff133f.chunk.js"
+    "revision": "af1d53324dd9d5ecff49",
+    "url": "/sikang-portfolio/static/js/2.163cbb52.chunk.js"
   },
   {
-    "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/sikang-portfolio/static/js/2.6eff133f.chunk.js.LICENSE.txt"
+    "revision": "3453b8997016469371284a28c0e873e2",
+    "url": "/sikang-portfolio/static/js/2.163cbb52.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "fe1b2590bc1430eca867",
-    "url": "/sikang-portfolio/static/js/main.e0c1d395.chunk.js"
+    "revision": "8f07f7185634134cd4d4",
+    "url": "/sikang-portfolio/static/js/main.0fdd599e.chunk.js"
   },
   {
     "revision": "3b72b3499c560d824ccb",
@@ -72,8 +76,24 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/sikang-portfolio/static/media/sass.6597cc35.png"
   },
   {
-    "revision": "d0a87387a73c2d7b53b6f2b28086d4b5",
-    "url": "/sikang-portfolio/static/media/sky.d0a87387.jpg"
+    "revision": "7f0a84f601aa51d5a186f2c4e6ca5c00",
+    "url": "/sikang-portfolio/static/media/sky.7f0a84f6.jpg"
+  },
+  {
+    "revision": "b7c9e1e479de3b53f1e4e30ebac2403a",
+    "url": "/sikang-portfolio/static/media/slick.b7c9e1e4.woff"
+  },
+  {
+    "revision": "ced611daf7709cc778da928fec876475",
+    "url": "/sikang-portfolio/static/media/slick.ced611da.eot"
+  },
+  {
+    "revision": "d41f55a78e6f49a5512878df1737e58a",
+    "url": "/sikang-portfolio/static/media/slick.d41f55a7.ttf"
+  },
+  {
+    "revision": "f97e3bbf73254b0112091d0192f17aec",
+    "url": "/sikang-portfolio/static/media/slick.f97e3bbf.svg"
   },
   {
     "revision": "e095a4cbcf2f89db11f7f4d5c4d5f2c4",

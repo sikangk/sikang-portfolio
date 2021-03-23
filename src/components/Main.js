@@ -11,7 +11,7 @@ const reveal = keyframes`
   `;
 const glow = keyframes`
    40% {
-      text-shadow: 0 0 0px #fff;
+      text-shadow: 0 0 10px #fff;
     }`;
 const MainBlock = styled.div`
   width: 100%;

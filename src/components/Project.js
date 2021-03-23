@@ -2,6 +2,9 @@ import React from "react";
 import styled from "styled-components";
 import ProjectImg from "./ProjectImg";
 import { useScrollFadeIn } from "../customhooks/ScrollFadeIn";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 import img1 from "../image/slideimage/reactmovie.PNG";
 import img2 from "../image/slideimage/todolist.PNG";
@@ -9,17 +12,34 @@ import img3 from "../image/slideimage/githubclone.PNG";
 import img4 from "../image/slideimage/momentumclone.PNG";
 
 const ProjectBlock = styled.div`
-  max-width: 1400px;
+  //max-width: 1400px;
   margin: 100px auto;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   h3 {
     font-size: 48px;
     font-weight: bold;
     border-bottom: 1px solid black;
     text-shadow: 3px 3px 3px rgb(0, 0, 0);
+  }
+  .slick-dots {
+    button:before {
+    }
+  }
+  .slick-slide.slick-center {
+    margin: 0px auto;
+    transform: scale(1);
+    transition: 0.8s;
+  }
+  .slick-slide {
+    transform: scale(0.8);
+    transition: 0.8s;
+  }
+  .slick-list {
+    height: 500px;
+    z-index: 200;
   }
 `;
 
@@ -27,13 +47,35 @@ const ProjectImgBlock = styled.div`
   width: 80%;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  @media (max-width: 1024px) {
-    grid-template-columns: 1fr;
-  }
 `;
 const ImgContainer = styled.div`
-  margin: 20px 30px;
+  width: 600px;
+  @media (max-width: 1024px) {
+    margin-bottom: 30px;
+    width: 300px;
+  }
 `;
+
+const settings = {
+  className: "center",
+  autoplay: true,
+  autoplaySpeed: 5000,
+  dots: true,
+  centerMode: true,
+  infinite: true,
+  slidesToShow: 1,
+  centerPadding: "0px",
+  speed: 1500,
+  variableWidth: true,
+  draggable: true,
+  arrows: false,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: "unslick",
+    },
+  ],
+};
 
 const PROJECT_ARRAY = [
   {
@@ -79,20 +121,26 @@ function Project() {
   return (
     <ProjectBlock>
       <h3 {...animatedProjectTitle}>PROJECT</h3>
-      <ProjectImgBlock>
-        {PROJECT_ARRAY.map((image) => (
-          <ImgContainer key={image.id}>
-            <ProjectImg
-              key={image.id}
-              title={image.title}
-              content={image.content}
-              img={image.img}
-              site={image.site}
-              github={image.github}
-            />
-          </ImgContainer>
-        ))}
-      </ProjectImgBlock>
+      <div style={{ margin: "0px auto" }}>
+        {
+          <Slider {...settings} style={{ width: "1113px" }}>
+            {PROJECT_ARRAY.map((image) => (
+              <div>
+                <ImgContainer key={image.id}>
+                  <ProjectImg
+                    key={image.id}
+                    title={image.title}
+                    content={image.content}
+                    img={image.img}
+                    site={image.site}
+                    github={image.github}
+                  />
+                </ImgContainer>
+              </div>
+            ))}
+          </Slider>
+        }
+      </div>
     </ProjectBlock>
   );
 }

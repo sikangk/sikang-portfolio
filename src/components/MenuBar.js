@@ -6,7 +6,7 @@ const MenuBarBlock = styled.div`
   width: 100%;
   top: 0;
   position: fixed;
-  z-index: 1;
+  z-index: 300;
   background: rgba(0, 0, 0, 0.2);
   .MenuUl {
     width: 100%;

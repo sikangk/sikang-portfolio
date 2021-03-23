@@ -43,7 +43,7 @@ const ModalBackground = styled.div`
 const ModalBlock = styled.div`
   position: relative;
   max-width: 500px;
-  height: 60vh;
+  height: 50vh;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -61,7 +61,7 @@ const ModalBlock = styled.div`
     height: 50vh;
   }
   h3 {
-    font-size: 48px;
+    font-size: 32px;
     font-weight: bold;
     border: none !important;
     margin-bottom: 0;
@@ -73,7 +73,7 @@ const ModalBlock = styled.div`
   }
 
   h4 {
-    font-size: 24px;
+    font-size: 16px;
     border-top: 1px solid black;
     margin: 40px 30px;
     @media (max-width: 768px) {

@@ -16,7 +16,9 @@
     "react-icons": "^3.11.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.3",
+    "react-slick": "^0.28.1",
     "regenerator-runtime": "^0.13.7",
+    "slick-carousel": "^1.8.1",
     "style-loader": "^1.2.1",
     "styled-components": "^5.2.0",
     "styled-reset": "^4.2.3"

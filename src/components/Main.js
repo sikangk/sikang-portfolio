@@ -60,7 +60,7 @@ const MainBlock = styled.div`
           radial-gradient(ellipse at bottom, #fff, transparent, transparent);
         -webkit-background-clip: text;
         background-clip: text;
-        border-bottom: 1px solid #fff;
+        //border-bottom: 1px solid #fff;
         color: transparent;
         font-size: 6vw;
         font-weight: bold;

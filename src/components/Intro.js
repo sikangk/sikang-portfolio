@@ -383,7 +383,7 @@ function Intro() {
           <p>저는 곽시강이라고 합니다.</p>
           <p>책임감을 중요시 합니다.</p>
           <p>항상 도전정신과 끈기를 가지고 절대 포기하지않는</p>
-          <p>신입 프론트엔드 개발자를 꿈꾸고 있습니다.</p>
+          <p>프론트엔드 개발자를 꿈꾸고 있습니다.</p>
         </ProfileContent>
       </AboutBlock>
       <SkillBlock>
@@ -392,6 +392,10 @@ function Intro() {
         </div>
         <div className="skill-body" {...animatedSkillBody}>
           <div className="frontEnd">
+          <div className="react">
+              <div className="react-icon"></div>
+              <span>REACT</span>
+            </div>
             <div className="html-css">
               <div className="html"></div>
               <div className="css"></div>
@@ -405,10 +409,7 @@ function Intro() {
               <div className="javascript-icon"></div>
               <span>JAVASCRIPT</span>
             </div>
-            <div className="react">
-              <div className="react-icon"></div>
-              <span>REACT</span>
-            </div>
+         
           </div>
           <div className="backEnd">
             <div className="node">

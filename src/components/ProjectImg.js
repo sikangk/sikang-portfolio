@@ -9,15 +9,29 @@ const Img = styled.img`
   box-shadow: 0px 2px 3px 0px;
   &:hover {
     box-shadow: 0 20px 20px 0px rgba(0, 0, 0, 0.9);
-    transition: 1.5s;
+    transition: 0.5s;
   }
   &:active {
     box-shadow: 0 20px 20px 0px rgba(0, 0, 0, 0.9);
-    transition: 1.5s;
+    transition: 0.5s;
+  }
+  @media (max-width: 1024px) {
+    width: 100%;
+    height: 30vh;
   }
 `;
 
-function ProjectImg({ title, content, img, site, github }) {
+function ProjectImg({
+  title,
+  content,
+  whatidid,
+  skill,
+  img,
+  site,
+  github,
+  youtube1,
+  youtube2,
+}) {
   const [modal, setModal] = useState(false);
   const onModal = () => {
     setModal(true);
@@ -33,8 +47,12 @@ function ProjectImg({ title, content, img, site, github }) {
         <Modal
           title={title}
           content={content}
+          whatidid={whatidid}
+          skill={skill}
           site={site}
           github={github}
+          youtube1={youtube1}
+          youtube2={youtube2}
           onRemoveModal={onRemoveModal}
         />
       )}

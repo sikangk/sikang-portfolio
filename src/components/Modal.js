@@ -41,8 +41,32 @@ const ModalBackground = styled.div`
 `;
 
 const ModalBlock = styled.div`
-  position: relative;
-  max-width: 500px;
+  ::-webkit-scrollbar {
+    bottom: 0;
+    height: 5px; // 8px
+    width: 8px;
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+  ::-webkit-scrollbar-track {
+    background-color: transparent;
+    border-radius: 6px;
+  }
+  ::-webkit-scrollbar-thumb {
+    border-radius: 6px;
+    background-color: transparent;
+    background-clip: padding-box;
+    border: 1px solid transparent;
+  }
+  &:hover::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  ::-webkit-scrollbar-button {
+    width: 0;
+    height: 0;
+    display: none;
+  }
+  //position: relative;
+  width: 800px;
   height: 50vh;
   display: flex;
   align-items: center;
@@ -59,6 +83,17 @@ const ModalBlock = styled.div`
   @media (max-width: 768px) {
     width: 300px;
     height: 50vh;
+  }
+  .youtube_1 {
+    width: 700px;
+    height: 300px;
+    @media (max-width: 768px) {
+      width: 300px;
+      height: 200px;
+    }
+  }
+  .yotube_2_container {
+    margin-top: 15px;
   }
   h3 {
     font-size: 32px;
@@ -101,7 +136,17 @@ const ModalBlock = styled.div`
   }
 `;
 
-function Modal({ title, content, site, github, onRemoveModal }) {
+function Modal({
+  title,
+  content,
+  site,
+  whatidid,
+  skill,
+  github,
+  youtube1,
+  youtube2,
+  onRemoveModal,
+}) {
   return (
     <ModalBackground>
       <ModalBlock>
@@ -114,10 +159,46 @@ function Modal({ title, content, site, github, onRemoveModal }) {
           사이트 바로가기
         </a>
         <a href={github} target="_blank" rel="noopener noreferrer">
-          <ImGithub />
-          깃허브 바로가기
+          {github !== "" ? (
+            <div>
+              <ImGithub />
+              깃허브 바로가기
+            </div>
+          ) : null}
         </a>
+        {youtube1 !== "" ? (
+          <div className="yotube_1_container">
+            <iframe
+              className="youtube_1"
+              src={youtube1}
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        ) : null}
+        {youtube2 !== "" ? (
+          <div className="yotube_1_container">
+            <iframe
+              className="youtube_1"
+              src={youtube2}
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        ) : null}
         <h4>{content}</h4>
+        {whatidid !== "" ? (
+          <div>
+            <h2>What I did?</h2>
+            <h4>{whatidid}</h4>
+          </div>
+        ) : null}
+        <div>
+          <h2>Skill</h2>
+          <h4>{skill}</h4>
+        </div>
       </ModalBlock>
     </ModalBackground>
   );

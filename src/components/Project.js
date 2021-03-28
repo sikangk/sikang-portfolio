@@ -51,11 +51,9 @@ const ProjectImgBlock = styled.div`
 `;
 const ImgContainer = styled.div`
   width: 800px;
-  height: 50vh;
   @media (max-width: 1024px) {
     margin-bottom: 30px;
     width: 400px;
-    height: 30vh;
   }
 `;
 

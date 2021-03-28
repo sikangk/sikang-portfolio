@@ -39,7 +39,7 @@ const ProjectBlock = styled.div`
     transition: 0.8s;
   }
   .slick-list {
-    height: 500px;
+    height: 70vh;
     z-index: 200;
   }
 `;
